@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJ3QF6CZO9B7R2Knaopor3PpKvsfA+8Vkv+z5upN5+W9hYOjPh2LkJ70+8qF" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </head>
+  <body>
+    <div class="bg_clr">
+      <!-- Navbar & Hero Start -->
+      <div class="container-fluid sticky-top px-0">
+        <div class="position-absolute bg-blue" style="left: 0; top: 0; width: 100%; height: 100%;"></div>
+        <div class="container px-0">
+          <nav class="navbar navbar-expand-lg navbar-dark  px-4 radius_css" id="myDIV">
+            <a href="index.html" class="navbar-brand p-0">
+              <img src="https://yejella.com/img/Services/logo-01.png" alt="Logo" class="logo_cls">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+              <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="career.html" class="nav-item nav-link">Career</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Navbar  End -->
+      <div class="spacer"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <div class="card">
+              <h2 class="text-center mb-4 rg_head">Registration Form</h2>
+              <form id="registrationForm">
+                <!-- First Name -->
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="firstName">
+                        <span class="cls_red">*</span>First Name </label>
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <!-- Middle Name -->
+                    <div class="form-group">
+                      <label for="middleName">Middle Name</label>
+                      <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <!-- Last Name -->
+                    <div class="form-group">
+                      <label for="lastName">
+                        <span class="cls_red">*</span>Last Name </label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+                    </div>
+                  </div>
+                  <!-- Job Type -->
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="jobType">Job Type</label>
+                      <select class="form-control" id="jobType" required>
+                        <option value="">Select Job Type</option>
+                        <option value="Full Time">Full Time</option>
+                        <option value="Part Time">Part Time</option>
+                        <option value="Freelancer">Freelancer</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Experience -->
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="experience">Experience (Years)</label>
+                      <select class="form-control" id="experience" required>
+                        <option value="">Select Experience</option>
+                        <option value="1-3">1-3 Years</option>
+                        <option value="4-6">4-6 Years</option>
+                        <option value="7+">7+ Years</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Skills -->
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="skills">Skills</label>
+                      <select class="form-control " id="skills" required>
+                        <option value="">Select Skills</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Python">Python</option>
+                        <option value="HTML/CSS">HTML/CSS</option>
+                        <option value="Java">Java</option>
+                        <option value="React">React</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <!-- Mobile Number -->
+                    <div class="form-group">
+                      <label for="mobileNumber">
+                        <span class="cls_red">*</span>Mobile Number </label>
+                      <input type="number" class="form-control" id="mobileNumber" placeholder="Enter Mobile Number" required>
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="email">
+                        <span class="cls_red">*</span>Email Address </label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter Email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- Aadhar Number -->
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label for="aadhar">
+                        <span class="cls_red">*</span>Aadhar Number </label>
+                      <input type="number" class="form-control" id="aadhar" placeholder="Enter Aadhar Number" required>
+                    </div>
+                  </div>
+                  <!-- Gender -->
+                  <div class="col-6">
+                    <div class="form-group">
+                      <label>Gender</label>
+                      <br>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="Male">
+                        <label class="form-check-label" for="male">Male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                        <label class="form-check-label" for="female">Female</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="" required>I confirm that all the details provided above are correct. </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- Submit Button -->
+                <div class="row">
+                  <div class="col-3"></div>
+                  <div class="col-6">
+                    <div class="form-group text-center">
+                      <button type="submit" class="btn btn-primary btn_submit">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <!-- Footer -->
+      <section id="footer">
+        <div class="container">
+          <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-3 col-md-3"></div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>Quick links</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Home </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>About </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>FAQ </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Get Started </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Videos </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled quick-links">
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Phone : 91234567890 </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Email : abc@123.com </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Address </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Manjeera Trinity </a>
+                </li>
+                <li>
+                  <a href="https://www.fiverr.com/share/qb8D02">
+                    <i class="fa fa-angle-double-right"></i>Hyderabad </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+              <hr>
+              <p class="h6">© All right Reversed. <a class="text-green ml-2" href="https://www.yejella.com" target="_blank">Yejella Technologies PVT LTD</a>
+              </p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </section>
+      <!-- ./Footer -->
+    </div>
+    <script>
+      document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        // Collecting form data
+        const firstName = document.getElementById("firstName").value;
+        const middleName = document.getElementById("middleName").value;
+        const lastName = document.getElementById("lastName").value;
+        const jobType = document.getElementById("jobType").value;
+        const experience = document.getElementById("experience").value;
+        const skills = document.getElementById("skills").value;
+        const mobileNumber = document.getElementById("mobileNumber").value;
+        const email = document.getElementById("email").value;
+        const aadhar = document.getElementById("aadhar").value;
+        const gender = document.querySelector('input[name="gender"]:checked');
+        if (gender) {
+          alert(`Form Submitted! \nName: ${firstName} ${middleName} ${lastName}\nGender: ${gender.value}\nJob Type: ${jobType}\nExperience: ${experience}\nSkills: ${skills}\nMobile: ${mobileNumber}\nEmail: ${email}\nAadhar: ${aadhar}`);
+        } else {
+          alert("Please select gender.");
+        }
+      });
+    </script>
+  </body>
+</html>
